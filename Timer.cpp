@@ -109,7 +109,7 @@ void Timer::stop(int8_t id)
 	}
 }
 /*
-void Timer::remaining(int8_t id)
+int Timer::remaining(int8_t id)
 {
 	if (id >= 0 && id < MAX_NUMBER_OF_EVENTS) {
 		int remaining_time = _events[id].period - (now - _events[id].lastEventTime);
