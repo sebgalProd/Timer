@@ -108,7 +108,15 @@ void Timer::stop(int8_t id)
 		_events[id].eventType = EVENT_NONE;
 	}
 }
-
+/*
+void Timer::remaining(int8_t id)
+{
+	if (id >= 0 && id < MAX_NUMBER_OF_EVENTS) {
+		int remaining_time = _events[id].period - (now - _events[id].lastEventTime);
+	}
+	return remaining_time;
+}
+*/
 void Timer::update(void)
 {
 	unsigned long now = millis();
